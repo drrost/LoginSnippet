@@ -1,0 +1,21 @@
+
+Status: DONE
+
+Case #4: Enter correct email and correct password
+STR:
+- Type "some@test.com"
+- Tap `Next`, EX1
+- Type "12345678"
+- Tap `Done`, EX2
+
+EX1:
+- `email` field should have green border and black text color
+- `password` field should have gray border and "password" as placeholder text
+- `password` field should be active, keyboard should be shown
+- `login` button shouldn't be inactive
+
+EX2:
+- `email` field should have green border and green text color
+- `password` field should have green border and black text color
+-  keyboard should be hidden
+- `login` button shouldn't be active

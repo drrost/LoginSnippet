@@ -1,0 +1,19 @@
+
+Status: DONE
+
+Case #3: Enter empty email and empty password
+STR:
+- Tap `Next`, EX1
+- Tap `Done` EX2
+
+EX1:
+- `email` field should have red border and placeholder should have text "email" and be red color
+- `password` field should have gray border and "password" as placeholder text
+- `password` field should be active, keyboard should be shown
+- `login` button shouldn't be inactive
+
+EX2:
+- `email` field should have red border and placeholder should have text "email" and be red color
+- `password` field should have red border and placeholder should have text "password" and be red color
+-  keyboard should be hidden
+- `login` button shouldn't be inactive

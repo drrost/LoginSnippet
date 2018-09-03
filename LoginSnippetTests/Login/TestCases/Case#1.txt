@@ -1,0 +1,9 @@
+
+Status: DONE
+
+Case #1: Land to `Login` screen
+EXR:
+- `email` field should have gray border and "email" as placeholder text
+- `email` field should be active, keyboard should be shown
+- `password` field should have gray border and "password" as placeholder text
+- `login` button shouldn't be inactive
