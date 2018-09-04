@@ -13,14 +13,13 @@
         <!--Hello View Controller-->
         <scene sceneID="dFD-mU-5tV">
             <objects>
-                <viewController id="uq0-yY-t2O" customClass="HelloViewController" customModule="testLogin2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uq0-yY-t2O" customClass="HelloViewController" customModule="LoginSnippet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7k-Dl-zNg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-w4-FmD">
-                                <rect key="frame" x="148" y="170" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-w4-FmD">
+                                <rect key="frame" x="148" y="164" width="79" height="30"/>
                                 <state key="normal" title="Go to Login"/>
                                 <connections>
                                     <segue destination="WO3-Cr-SQK" kind="show" id="0cJ-dz-c00"/>
@@ -28,6 +27,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OHa-w4-FmD" firstAttribute="centerX" secondItem="Y7k-Dl-zNg" secondAttribute="centerX" id="alZ-Rr-UhZ"/>
+                            <constraint firstItem="OHa-w4-FmD" firstAttribute="top" secondItem="QNH-tW-QZh" secondAttribute="top" constant="100" id="vsp-3s-es2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QNH-tW-QZh"/>
                     </view>
                     <navigationItem key="navigationItem" id="cer-W9-gEm"/>
@@ -39,12 +42,12 @@
         <!--Login View Controller-->
         <scene sceneID="7Hn-kl-5RZ">
             <objects>
-                <viewController id="WO3-Cr-SQK" customClass="LoginViewController" customModule="testLogin2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WO3-Cr-SQK" customClass="LoginViewController" customModule="LoginSnippet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9l-YX-RBX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1I-tE-1B2" customClass="FormView" customModule="testLogin2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1I-tE-1B2" customClass="FormView" customModule="LoginSnippet" customModuleProvider="target">
                                 <rect key="frame" x="10" y="74" width="355" height="50.5"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0l-Uk-7wG">
@@ -92,7 +95,7 @@
                                     <outlet property="textFieldContainerView" destination="S0l-Uk-7wG" id="elN-lP-omg"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukk-GY-5yx" customClass="FormView" customModule="testLogin2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukk-GY-5yx" customClass="FormView" customModule="LoginSnippet" customModuleProvider="target">
                                 <rect key="frame" x="10" y="134" width="355" height="50.5"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghf-Z4-K5R">
